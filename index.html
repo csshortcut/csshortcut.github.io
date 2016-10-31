@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>csshotcut</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+    <link rel="stylesheet" href="/src/styles/style.css">
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+
+    <!-- components -->
+    <link rel="import" href="/src/csshotcut-app/csshotcut-app.html">
+    <link rel="import" href="/src/components/afonso-menu.html">
+    <link rel="import" href="/src/components/hot-twitter.html">
+    <link rel="import" href="/src/components/afonso-footer.html">
+
+  </head>
+  <body>
+
+    <header class="header">
+      <div style="width: 100%;">
+        <afonso-menu></afonso-menu>
+      </div>
+      <figure>
+        <img src="/src/logo.png" class="logo">
+        <h1 class="heading">O atalho na sua vida profissional</h1>
+      </figure>
+      <p class="paragraph">
+        Diga adeus aos dias de "tentativa e erro", iremos desvendar todas as entrelinhas do CSS de forma direta e objetiva, garantindo que o conhecimento não ira se perder. Nosso objetivo não é formar desenvolvedores para disputar vagas nos mercado de trabalho, mas sim, ajuda-los a encontrar seu caminho para as estrelas.
+      </p>
+      <img src="/src/arrow.png" class="arrow">
+    </header>
+
+    <section class="presentation">
+      <h2 class="heanding-lv2">Organização do CSS</h2>
+      <div class="presentation-video-container">
+      <iframe class="presentation-video" src="https://www.youtube.com/embed/Jr_Xoy3Pbkw" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <p class="paragraph-2">
+        O curso tem como objetivo desmistificar todos os assuntos relacionas a organização do CSS, desde tecnicas para definir a melhor nomenclatura para para suas classes ate criar componentes totalmente funcionais e desacoplados. Abodaremos os princiais conceitos relacionados a escalabilidade e mantenabilidade, passaremos por todas as principais metodolias mas não necessariamente iramos nos ater a elas, o objetivo sera gerar através de conhecimento e muita prática um senso critico que possibilite tomar a melhor deciscão para cada caso.
+      </p>
+    </section>
+
+    <hot-twitter></hot-twitter>
+
+    <section class="ementa">
+
+      <h2 class="heanding-lv2">Ementa</h2>
+
+      <div class="ementa-container">
+        <ul>
+        <li>A iportância da organização
+          <ul>
+          <li>Problemas relacionados</li>
+          <li>Code UI</li>
+          <li>Developer UX</li>
+          </ul>
+        </li>
+        <li>Como funciona a **cascata**
+          <ul>
+          <li>Escopo</li>
+          <li>herança</li>
+          <li>Especificidade</li>
+          </ul>
+        </li>
+        <li>Code Style Guide
+          <ul>
+          <li>Idiomatic CSS</li>
+          </ul>
+        </li>
+        <li>Semântica**
+          <ul>
+          <li>Como nomer seus seletores (Clean Code)</li>
+          </ul>
+        </li>
+        <li>Intro a pré-processesadores
+          <ul>
+          <li>Module Bundler</li>
+          </ul>
+        </li>
+        <li>Metodoogias
+          <ul>
+          <li>SMACS</li>
+          <li>BEM</li>
+          <li>Atomic Design</li>
+          <li>ITCSS</li>
+          <li>RSCSS</li>
+          </ul>
+        </li>
+        <li>React Style</li>
+        </li>
+        <li>Modulos
+          <ul>
+          <li>CSS modules</li>
+          <li>Web comonens</li>
+          </ul>
+        </li>
+        <li>Documentação / Style guide
+          <ul>
+          <li>Gerar documentação  partir dos comentários (Geral)</li>
+          <li>Pattern Lab (Atomic Design)</li>
+          <li>Iron elements (Web components)</li>
+          <li>bem-docs (BEM)</li>
+          </ul>
+        </li>
+        <li>HTTP2</li>
+        </ul>
+      </div>
+
+    </section>
+
+    <afonso-footer></afonso-footer>
+
+  </body>
+</html>
