@@ -1,10 +1,19 @@
 body {
-  margin-top: 100vw;
-  font-family: 'Roboto', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+font-family: 'Open Sans', sans-serif;
 }
 
 * {
   box-sizing: border-box;;
+}
+
+@font-face {
+    font-family: 'harabara_maisharabaramaisdemo';
+    src: url('/src/fonts/harabara_mais_demo-webfont.woff2') format('woff2'),
+         url('/src/fonts/harabara_mais_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 .nav {
@@ -31,9 +40,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   animation: space 30s infinite alternate linear;
-  position: fixed;
-  z-index: -1;
-  transform: translateY(-100vw);
 }
 
 @keyframes space {
@@ -54,23 +60,38 @@ figure {
   color: #fff;
   font-size: 24px;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
 }
 
-.arrow {
-  width: 30px;
+.slide-down-btn {
+  background-color: transparent;;
+  border: 0;
   margin-bottom: 40px;
   animation: float .5s infinite alternate;
+  padding: 15px;
 }
 
 @keyframes float {
   from {transform: translateY(0);}
   to {transform: translateY(-10px)}
 }
-/*
-.main {
-  height: 300px;
-}*/
+
+        /*animation: .6s fillshiny infinite;*/
+
+.arrow {
+  fill: #fff;
+}
+
+.arrow:hover {
+  animation: .6s fillshiny infinite;
+}
+
+@keyframes fillshiny {
+  0%   {fill: #05fae9;}
+  33%  {fill: #62acd6;}
+  66%  {fill: #a574c8;}
+  100% {fill: #fa2cb7;}
+}
+
 
 .paragraph {
   color: #fff;
@@ -79,7 +100,8 @@ figure {
   max-width: 800px;
   text-align: center;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
+font-family: 'Open Sans', sans-serif;;
 }
 
 .presentation {
@@ -93,24 +115,6 @@ figure {
   color: #fff;
 }
 
-.heanding-lv2 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  border-bottom: 4px solid #fa2cb7;
-  padding: 0 25px 15px 25px;
-  font-size: 30px;
-  font-weight: 300;
-  display: inline-block;
-  animation: .6s fillshiny infinite;
-}
-
-@keyframes fillshiny {
-  0%   {border-color: #05fae9;}
-  33%  {border-color: #62acd6;}
-  66%  {border-color: #a574c8;}
-  100% {border-color: #fa2cb7;}
-}
 
 .paragraph-2 {
   color: #fff;
@@ -119,7 +123,8 @@ figure {
   max-width: 800px;
   text-align: center;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
+
 }
 
 .presentation-video-container {
@@ -149,4 +154,16 @@ figure {
 
 .ementa-container ul li ul li {
   font-weight: 300;
+}
+
+.section-bg {
+  background: var(--section);
+  width: 100%;
+  padding: 50px 10px;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }

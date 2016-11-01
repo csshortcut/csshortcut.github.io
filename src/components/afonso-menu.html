@@ -4,156 +4,157 @@
   <template>
     <style>
 
-:root {
-  --highlight-background: #029494;
-  --highlight-color: #fff;
-}
+      :root {
+        --highlight-background: #029494;
+        --highlight-color: #fff;
+      }
 
-.bs-flex-center {
-  display: flex;
-  align-items: center;
-}
+      .bs-flex-center {
+        display: flex;
+        align-items: center;
+      }
 
-.bs-decoration-off {
-  text-decoration: none;
-  transition: opacity .3s;
-}
+      .bs-decoration-off {
+        text-decoration: none;
+        transition: opacity .3s;
+      }
 
-.bs-decoration-off:hover {
-  opacity: .7;
-}
+      .bs-decoration-off:hover {
+        opacity: .7;
+      }
 
-.or-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
-  position: relative;
-}
+      .or-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+        position: relative;
+      }
 
-.or-header {
-background-image: linear-gradient(
-  to right,
-  #05fae9,
-  #fa2cb7
-);
-  color: var(--highlight-color);
-}
+      .or-header {
 
-/* menu
-=========================================== */
-@media screen and (min-width: 888px) {
-  .ml-nav {
-    flex: 1;
-  }
-}
+        background-image: linear-gradient(
+          to right,
+          #05fae9,
+          #fa2cb7
+        );
+        color: var(--highlight-color);
+      }
 
-.ml-nav {
-}
+      /* menu
+      =========================================== */
+      @media screen and (min-width: 888px) {
+        .ml-nav {
+          flex: 1;
+        }
+      }
 
-.ml-menu {
-  padding-left: 0px;
-  margin: 0px;
-  text-align: right;
-}
+      .ml-nav {
+      }
 
-@media screen and (max-width: 888px) {
-  .ml-menu {
-    position: absolute;
-    background-color: #262626;
-    text-align: left;
-    z-index: 2;
-  }
-}
+      .ml-menu {
+        padding-left: 0px;
+        margin: 0px;
+        text-align: right;
+      }
 
-.ml-iten-menu {list-style: none;}
+      @media screen and (max-width: 888px) {
+        .ml-menu {
+          position: absolute;
+          background-color: #262626;
+          text-align: left;
+          z-index: 2;
+        }
+      }
 
-@media screen and (min-width: 888px) {
-  .ml-iten-menu {display: inline-block;}
-}
+      .ml-iten-menu {list-style: none;}
 
-@media screen and (max-width: 888px) {
+      @media screen and (min-width: 888px) {
+        .ml-iten-menu {display: inline-block;}
+      }
 
-  .ml-logotipo {
-    order: 2;
-  }
+      @media screen and (max-width: 888px) {
 
-  .ml-nav {
-    order: 1;
-  }
-}
+        .ml-logotipo {
+          order: 2;
+        }
 
-/* text
-=========================================== */
-.at-heading-lv1 {
-  color: #fff;
-  font-size: 24px;
-  display: block;
-  font-weight: 400;
-}
+        .ml-nav {
+          order: 1;
+        }
+      }
 
-.at-sub-heading {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 300;
-  display: block;
-}
+      /* text
+      =========================================== */
+      .at-heading-lv1 {
+        color: #fff;
+        font-size: 24px;
+        display: block;
+        font-weight: 400;
+      }
 
-/* menu
-=========================================== */
-@media screen and (min-width: 888px) {
-  .at-btn-open {display: none;}
-}
+      .at-sub-heading {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 300;
+        display: block;
+      }
 
-.at-link-menu {
-  color: #dedddd;
-  text-decoration: none;
-  font-weight: 400;
-  display: block;
-  padding: 10px;
-  transition: color .2s;
-}
+      /* menu
+      =========================================== */
+      @media screen and (min-width: 888px) {
+        .at-btn-open {display: none;}
+      }
 
-.at-link-menu:hover {
-  color: #fff;
-}
+      .at-link-menu {
+        color: #dedddd;
+        text-decoration: none;
+        font-weight: 400;
+        display: block;
+        padding: 10px;
+        transition: color .2s;
+      }
 
-@media screen and (max-width: 888px) {
-  .at-link-menu {background: #262626;}
-}
+      .at-link-menu:hover {
+        color: #fff;
+      }
 
-/* link to Cast Show
-=========================================== */
-.at-css-cast-show {
-  padding: 5px 10px;
-  margin-left: 10px;
-  order: 3;
-}
+      @media screen and (max-width: 888px) {
+        .at-link-menu {background: #262626;}
+      }
 
-@media screen and (max-width: 888px) {
-  .at-css-cast-show {
-    order: 3;
-  }
-}
+      /* link to Cast Show
+      =========================================== */
+      .at-css-cast-show {
+        padding: 5px 10px;
+        margin-left: 10px;
+        order: 3;
+      }
 
-/* logotipo
-=========================================== */
-.ml-logotipo {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  margin-right: 20px;
-}
+      @media screen and (max-width: 888px) {
+        .at-css-cast-show {
+          order: 3;
+        }
+      }
 
-@media screen and (max-width: 888px) {
-  .ml-logotipo {flex: 1;}
-}
+      /* logotipo
+      =========================================== */
+    .ml-logotipo {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      margin-right: 20px;
+    }
+
+    @media screen and (max-width: 888px) {
+      .ml-logotipo {flex: 1;}
+    }
     </style>
 
-    <header class="or-header">
+    <div class="or-header">
       <div class="or-container bs-flex-center">
         <h1 class="ml-logotipo">
-          <a href="index.html" class="bs-decoration-off">
+          <a href="http://afonsopacifer.github.io/index.html" class="bs-decoration-off">
             <span class="at-heading-lv1">
               Afonso Pacifer
             </span>
@@ -168,25 +169,25 @@ background-image: linear-gradient(
           </div>
           <ul id="menu" class="ml-menu">
             <li class="ml-iten-menu">
-              <a href="index.html" class="at-link-menu">Home</a>
+              <a href="http://afonsopacifer.github.io/index.html" target="_blank" class="at-link-menu">Home</a>
             </li>
             <li class="ml-iten-menu">
-              <a href="challenges.html" class="at-link-menu">Desafios</a>
+              <a href="http://afonsopacifer.github.io/challenges.html" target="_blank" class="at-link-menu">Desafios</a>
             </li>
             <li class="ml-iten-menu">
-              <a href="writing.html" class="at-link-menu">Artigos</a>
+              <a href="http://afonsopacifer.github.io/writing.html" target="_blank" class="at-link-menu">Artigos</a>
             </li>
             <li class="ml-iten-menu">
-              <a href="screencasts.html" class="at-link-menu">Videos</a>
+              <a href="http://afonsopacifer.github.io/screencasts.html" target="_blank" class="at-link-menu">Videos</a>
             </li>
             <li class="ml-iten-menu">
-              <a href="misc.html" class="at-link-menu">Variados</a>
+              <a href="http://afonsopacifer.github.io/misc.html" target="_blank" class="at-link-menu">Variados</a>
             </li>
             <li class="ml-iten-menu">
-              <a href="speaking.html" class="at-link-menu">Palestras</a>
+              <a href="http://afonsopacifer.github.io/speaking.html" target="_blank" class="at-link-menu">Palestras</a>
             </li>
             <li class="ml-iten-menu">
-              <a href="projects.html" class="at-link-menu">Projetos</a>
+              <a href="http://afonsopacifer.github.io/projects.html" target="_blank" class="at-link-menu">Projetos</a>
             </li>
           </ul>
         </nav>
@@ -196,7 +197,7 @@ background-image: linear-gradient(
           </a>
         </div>
       </div>
-  </header>
+  </div>
 
   </template>
 

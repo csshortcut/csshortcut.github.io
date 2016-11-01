@@ -1,120 +1,147 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" prefix="og: http://ogp.me/ns#">
   <head>
 
-    <title>csshotcut</title>
+    <!-- SEO -->
+    <title>Cascading Style Shortcut - Curso de organização de CSS</title>
+    <meta name="description" content="">
+    <meta name="robots" content="index,follow">
+
+    <!-- configs -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="/manifest.json">
 
+    <!-- favicons -->
+    <link rel="icon" href="favicon-32.png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cascading Style Shortcut - Curso de organização de CSS">
+    <meta property="og:description" content="">
+    <meta property="og:url" content="https://csshortcut.github.io/">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cascading Style Shortcut - Curso de organização de CSS">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:url" content="https://csshortcut.github.io/">
+    <meta name="twitter:image" content="">
+
+    <!-- app -->
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+
+    <!-- styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
     <link rel="stylesheet" href="/src/styles/style.css">
 
+    <!-- fonts -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+
+    <!-- polyfill -->
     <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
 
     <!-- components -->
     <link rel="import" href="/src/csshotcut-app/csshotcut-app.html">
     <link rel="import" href="/src/components/afonso-menu.html">
     <link rel="import" href="/src/components/hot-twitter.html">
+    <link rel="import" href="/src/components/featured-list.html">
     <link rel="import" href="/src/components/afonso-footer.html">
+    <link rel="import" href="/src/components/h2-shiny.html">
 
   </head>
   <body>
 
+    <!-- header
+    =========================================== -->
     <header class="header">
+
       <div style="width: 100%;">
         <afonso-menu></afonso-menu>
       </div>
+
       <figure>
         <img src="/src/logo.png" class="logo">
         <h1 class="heading">O atalho na sua vida profissional</h1>
       </figure>
+
       <p class="paragraph">
         Diga adeus aos dias de "tentativa e erro", iremos desvendar todas as entrelinhas do CSS de forma direta e objetiva, garantindo que o conhecimento não ira se perder. Nosso objetivo não é formar desenvolvedores para disputar vagas nos mercado de trabalho, mas sim, ajuda-los a encontrar seu caminho para as estrelas.
       </p>
-      <img src="/src/arrow.png" class="arrow">
+
+      <button class="slide-down-btn" id="slideDownBtn">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" class="arrow">
+            <desc iVinci="yes" version="4.6" gridStep="20" showGrid="no" snapToGrid="no" codePlatform="0"/>
+            <g id="Layer1" name="Layer 1" opacity="1">
+                <g id="Shape1">
+                    <desc shapeID="1" type="0" basicInfo-basicType="0" basicInfo-roundedRectRadius="12" basicInfo-polygonSides="6" basicInfo-starPoints="5" bounding="rect(-8,-12,16,24)" text="" font-familyName="" font-pixelSize="20" font-bold="0" font-underline="0" font-alignment="1" strokeStyle="0" markerStart="0" markerEnd="0" shadowEnabled="0" shadowOffsetX="0" shadowOffsetY="2" shadowBlur="4" shadowOpacity="160" blurEnabled="0" blurRadius="4" transform="matrix(-0.0442654,0.99902,-0.99902,-0.0442654,12,12)" pers-center="0,0" pers-size="0,0" pers-start="0,0" pers-end="0,0" locked="0" mesh="" flag=""/>
+                    <path id="shapePath1" d="M0.183423,7.59462 L4.36196,3.65372 L12,12 L20.3463,4.36196 L24.1599,8.65699 L11.6459,19.9922 L0.183423,7.59462 Z" style="stroke:none;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </svg>
+      </button>
+
     </header>
 
-    <section class="presentation">
-      <h2 class="heanding-lv2">Organização do CSS</h2>
-      <div class="presentation-video-container">
-      <iframe class="presentation-video" src="https://www.youtube.com/embed/Jr_Xoy3Pbkw" frameborder="0" allowfullscreen></iframe>
+    <!--
+    =========================================== -->
+    <section class="section-bg" id="slideDownTarget">
+      <div class="section-container">
+
+        <center>
+          <h2-shiny>Como organizar o CSS?</h2-shiny>
+        </center>
+
+        <div class="presentation-video-container">
+          <iframe class="presentation-video" src="https://www.youtube.com/embed/Jr_Xoy3Pbkw" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <p class="paragraph-2">
+          O curso tem como objetivo desmistificar todos os assuntos relacionas a organização do CSS, desde tecnicas para definir a melhor nomenclatura para para suas classes ate criar componentes totalmente funcionais e desacoplados. Abodaremos os princiais conceitos relacionados a escalabilidade e mantenabilidade, passaremos por todas as principais metodolias mas não necessariamente iramos nos ater a elas, o objetivo sera gerar através de conhecimento e muita prática um senso critico que possibilite tomar a melhor deciscão para cada caso.
+        </p>
+
       </div>
-      <p class="paragraph-2">
-        O curso tem como objetivo desmistificar todos os assuntos relacionas a organização do CSS, desde tecnicas para definir a melhor nomenclatura para para suas classes ate criar componentes totalmente funcionais e desacoplados. Abodaremos os princiais conceitos relacionados a escalabilidade e mantenabilidade, passaremos por todas as principais metodolias mas não necessariamente iramos nos ater a elas, o objetivo sera gerar através de conhecimento e muita prática um senso critico que possibilite tomar a melhor deciscão para cada caso.
-      </p>
     </section>
 
+    <!--
+    =========================================== -->
     <hot-twitter></hot-twitter>
+    <!-- <hot-twitter tweets="tweets.json"></hot-twitter> -->
 
-    <section class="ementa">
+    <!--
+    =========================================== -->
+    <section class="section-bg">
+      <div class="section-container">
 
-      <h2 class="heanding-lv2">Ementa</h2>
+        <center>
+          <h2-shiny>Confira a ementa</h2-shiny>
+        </center>
 
-      <div class="ementa-container">
-        <ul>
-        <li>A iportância da organização
-          <ul>
-          <li>Problemas relacionados</li>
-          <li>Code UI</li>
-          <li>Developer UX</li>
-          </ul>
-        </li>
-        <li>Como funciona a **cascata**
-          <ul>
-          <li>Escopo</li>
-          <li>herança</li>
-          <li>Especificidade</li>
-          </ul>
-        </li>
-        <li>Code Style Guide
-          <ul>
-          <li>Idiomatic CSS</li>
-          </ul>
-        </li>
-        <li>Semântica**
-          <ul>
-          <li>Como nomer seus seletores (Clean Code)</li>
-          </ul>
-        </li>
-        <li>Intro a pré-processesadores
-          <ul>
-          <li>Module Bundler</li>
-          </ul>
-        </li>
-        <li>Metodoogias
-          <ul>
-          <li>SMACS</li>
-          <li>BEM</li>
-          <li>Atomic Design</li>
-          <li>ITCSS</li>
-          <li>RSCSS</li>
-          </ul>
-        </li>
-        <li>React Style</li>
-        </li>
-        <li>Modulos
-          <ul>
-          <li>CSS modules</li>
-          <li>Web comonens</li>
-          </ul>
-        </li>
-        <li>Documentação / Style guide
-          <ul>
-          <li>Gerar documentação  partir dos comentários (Geral)</li>
-          <li>Pattern Lab (Atomic Design)</li>
-          <li>Iron elements (Web components)</li>
-          <li>bem-docs (BEM)</li>
-          </ul>
-        </li>
-        <li>HTTP2</li>
-        </ul>
+        <featured-list></featured-list>
+        <!-- <featured-list list="list.md"></featured-list> -->
       </div>
-
     </section>
 
+    <!-- Eventick
+    =========================================== -->
+
+    <!--
+    =========================================== -->
     <afonso-footer></afonso-footer>
+
+    <!-- scritps
+    =========================================== -->
+    <script src="/src/scripts/elevator.min.js"></script>
+
+    <script>
+      window.onload = function() {
+        var elevator = new Elevator({
+          element: document.querySelector('#slideDownBtn'),
+          targetElement: document.querySelector('#slideDownTarget')
+        });
+      }
+    </script>
 
   </body>
 </html>
