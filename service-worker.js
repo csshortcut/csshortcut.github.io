@@ -29,7 +29,7 @@
 
 
 /* eslint-disable quotes, comma-spacing */
-var PrecacheConfig = [["/index.html","6ad6ec7e7a69bfb58fc7866f76d531c4"]];
+var PrecacheConfig = [["/bower_components/polymer/polymer-micro.html","fad9ff58728aac53c2db8fce5ddafb1b"],["/bower_components/polymer/polymer-mini.html","b8a6cdf9a9a86dfc28aa48de7cb23454"],["/bower_components/polymer/polymer.html","8971cb9599d3db6a49d24b2e910c86bc"],["/bower_components/webcomponentsjs/webcomponents-lite.js","a1882f82ebfc212658591b4e817d8e03"],["/index.html","2703bec47cb7c83b4eee02823bf2233b"],["/src/components/afonso-footer.html","f28753f69b85b799ad1fbf418a592f68"],["/src/components/afonso-menu.html","c4f4c3e62dc0f1042a07d597a90a22fe"],["/src/components/featured-list.html","ac7d993a3ce20eb583d672296614e0c9"],["/src/components/h2-shiny.html","07711f9dff0a4d0924e16016604b0cb8"],["/src/components/hot-twitter.html","0f5736429e8a949f76e6554bf928d16d"],["/src/csshotcut-app/csshotcut-app.html","93a665efe06f55fc7f04814190f6b301"],["/src/scripts/elevator.min.js","1487ed0c1bc4b1c11512b9f08a24c4bd"],["/src/styles/style.css","d30a26539ec99ceddea3b7bf4fb170c6"]];
 /* eslint-enable quotes, comma-spacing */
 var CacheNamePrefix = 'sw-precache-v1--' + (self.registration ? self.registration.scope : '') + '-';
 
