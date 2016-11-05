@@ -121,6 +121,14 @@ background-image: linear-gradient(
   border-right: 0;
 }
 
+@media screen and (max-width: 400px) {
+  .at-input {
+    border-right: 1px solid #ccc;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+}
+
 .at-input:focus {
   outline:0;
   border-color: #000;
@@ -173,6 +181,13 @@ background-image: linear-gradient(
   border: 0;
   transition: opacity .3s;
   margin: 0;
+}
+
+@media screen and (max-width: 400px) {
+.at-btn {
+  width: 100%;
+  margin-top: 5px;
+}
 }
 
 .at-btn:hover {
