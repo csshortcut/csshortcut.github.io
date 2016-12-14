@@ -34,11 +34,11 @@
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <style>
 body{font-family:'Open Sans', sans-serif;}*{box-sizing:border-box;}@font-face{font-family:'harabara_maisharabaramaisdemo';src:url("/src/fonts/harabara_mais_demo-webfont.woff2") format('woff2'),
-         url("/src/fonts/harabara_mais_demo-webfont.woff") format('woff');font-weight:normal;font-style:normal;}.btn{border:1px solid #fff;padding:5px 30px;color:#fff;text-decoration:none;}.btn:hover{animation:.6s bgshiny infinite;}@keyframes bgshiny{0%{background:#05fae9;}33%{background:#62acd6;}66%{background:#a574c8;}100%{background:#fa2cb7;}}.nav{height:50px;background-image:linear-gradient(
+         url("/src/fonts/harabara_mais_demo-webfont.woff") format('woff');font-weight:normal;font-style:normal;}.btn-container{text-align:center;}.btn{border:1px solid #fff;padding:10px 0;width:140px;margin:5px;text-align:center;color:#fff;display:inline-block;text-decoration:none;}.btn:hover{animation:.6s bgshiny infinite;}@keyframes bgshiny{0%{background:#05fae9;}33%{background:#62acd6;}66%{background:#a574c8;}100%{background:#fa2cb7;}}.nav{height:50px;background-image:linear-gradient(
     to right,
     #05fae9,
     #fa2cb7
-  );width:100%;}:root{--section:#000;}.header{width:100%;min-height:100vh;background:#000;background-image:url("../../../../src/bg.jpg");display:flex;align-items:center;flex-direction:column;justify-content:space-between;animation:space 30s infinite alternate linear;}@keyframes space{from{background-position:300px 300px;}to{background-position:-300px -300px;}}figure{text-align:center;}.logo{width:250px;}.heading{margin:20px 0 0 0;color:#fff;font-size:24px;font-weight:300;}.slide-down-btn{background-color:transparent;border:0;margin-bottom:40px;animation:float .5s infinite alternate;padding:15px;}@keyframes float{from{transform:translateY(0);}to{transform:translateY(-10px);}}.arrow{fill:#fff;}.arrow:hover{animation:.6s fillshiny infinite;}@keyframes fillshiny{0%{fill:#05fae9;}33%{fill:#62acd6;}66%{fill:#a574c8;}100%{fill:#fa2cb7;}}.paragraph{color:#fff;font-weight:300;width:100%;max-width:800px;text-align:center;line-height:1.5;font-size:18px;font-family:'Open Sans', sans-serif;}.presentation{width:100%;background-color:var(--section);display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:40px 10px;color:#fff;}.paragraph-2{color:#fff;font-weight:300;width:100%;max-width:800px;line-height:1.5;font-size:18px;}.presentation-video-container{width:100%;text-align:center;}.presentation-video{width:100%;max-width:400px;height:300px;margin-top:30px;}.ementa{background:var(--section);padding:40px;}.ementa-container{width:100%;max-width:800px;margin:0 auto;margin-top:40px;color:#fff;}.ementa-container ul li ul li{font-weight:300;}.section-bg{background:var(--section);width:100%;padding:50px 10px;}.section-container{width:100%;max-width:800px;margin:0 auto;}.shiny-line{display:block;width:100%;height:3px;background-image:linear-gradient(
+  );width:100%;}:root{--section:#000;}.header{width:100%;min-height:100vh;background:#000;background-image:url("../../../../src/bg.jpg");display:flex;align-items:center;flex-direction:column;justify-content:space-between;animation:space 30s infinite alternate linear;}@keyframes space{from{background-position:300px 300px;}to{background-position:-300px -300px;}}figure{text-align:center;}.logo{width:100%;max-width:400px;}.heading{margin:20px 0 0 0;color:#fff;font-size:24px;font-weight:300;}.slide-down-btn{background-color:transparent;border:0;margin-bottom:40px;animation:float .5s infinite alternate;padding:15px;}@keyframes float{from{transform:translateY(0);}to{transform:translateY(-10px);}}.arrow{fill:#fff;}.arrow:hover{animation:.6s fillshiny infinite;}@keyframes fillshiny{0%{fill:#05fae9;}33%{fill:#62acd6;}66%{fill:#a574c8;}100%{fill:#fa2cb7;}}.paragraph{color:#fff;font-weight:300;width:100%;max-width:800px;text-align:center;line-height:1.5;font-size:18px;font-family:'Open Sans', sans-serif;}.presentation{width:100%;background-color:var(--section);display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:40px 10px;color:#fff;}.paragraph-2{color:#fff;font-weight:300;width:100%;max-width:800px;line-height:1.5;font-size:18px;}.presentation-video-container{width:100%;text-align:center;}.presentation-video{width:100%;max-width:400px;height:300px;margin-top:30px;}.ementa{background:var(--section);padding:40px;}.ementa-container{width:100%;max-width:800px;margin:0 auto;margin-top:40px;color:#fff;}.ementa-container ul li ul li{font-weight:300;}.partners{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;}.partners a{text-decoration:none;opacity:.7;transition:opacity .3s;}.partners a:hover{opacity:1;}.partner{margin:20px;width:100%;max-width:120px;}.codamos{margin:20px;width:100%;max-width:200px;}.section-bg{background:var(--section);width:100%;padding:50px 10px;}.section-container{width:100%;max-width:800px;margin:0 auto;}.shiny-line{display:block;width:100%;height:3px;background-image:linear-gradient(
     to right,
     #05fae9,
     #fa2cb7
@@ -189,7 +189,7 @@ delete this[t])},_configureProperties:function(e,t){for(var n in e){var r=e[n];i
 </dom-module>
 <dom-module id="hot-twitter" assetpath="../../../../src/components/">
   <template>
-    <style>*{box-sizing:border-box;}.twitter-container{width:100%;overflow:hidden;padding:50px 8px;background-image:url("../../../../src/bg.jpg");}.tweet-container{display:flex;width:100%;max-width:700px;margin:0 auto;align-items:center;animation:switch 7s infinite;}@keyframes switch{0%{transform:translateX(-100vw);}8%{transform:translateX(20px);}12%{transform:translateX(0);}88%{transform:translateX(0);}92%{transform:translateX(-20px);}100%{transform:translateX(100vw);}}.twitter-text{margin-left:30px;font-weight:300;color:#fff;}.twitter-avatar{width:100px;border-radius:50%;overflow:hidden;}.twitter-user{width:100%;display:block;text-align:left;margin-top:10px;}a{text-decoration:none;color:#fff;transition:opacity .3s;}a:hover{animation:.6s mario infinite;}@keyframes mario{0%{color:#05fae9;}33%{color:#62acd6;}66%{color:#a574c8;}100%{color:#fa2cb7;}}</style>
+    <style>*{box-sizing:border-box;}.twitter-container{width:100%;overflow:hidden;padding:50px 8px;background-image:url("../../../../src/bg.jpg");}.tweet-container{display:flex;width:100%;max-width:700px;margin:0 auto;align-items:center;animation:switch 10s infinite;}@keyframes switch{0%{transform:translateX(-100vw);}8%{transform:translateX(20px);}12%{transform:translateX(0);}88%{transform:translateX(0);}92%{transform:translateX(-20px);}100%{transform:translateX(100vw);}}.twitter-text{margin-left:30px;font-weight:300;color:#fff;}.twitter-avatar{width:100px;border-radius:50%;overflow:hidden;}.twitter-user{width:100%;display:block;text-align:left;margin-top:10px;}a{text-decoration:none;color:#fff;transition:opacity .3s;}a:hover{animation:.6s mario infinite;}@keyframes mario{0%{color:#05fae9;}33%{color:#62acd6;}66%{color:#a574c8;}100%{color:#fa2cb7;}}</style>
 <div class="twitter-container">
     <template is="dom-repeat" items="{{tweets}}">
 
@@ -208,7 +208,7 @@ delete this[t])},_configureProperties:function(e,t){for(var n in e){var r=e[n];i
 </div>
   </template>
 
-  <script>Polymer({is:"hot-twitter",ready:function(){this.tweets=[{user:"@_janasouza",text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum purus, pretium consectetur nisl et, posuere placerat justo. Sed rhoncus",image:"jana.jpg",url:"https://twitter.com/_janasouza"}]}});</script>
+  <script>Polymer({is:"hot-twitter",ready:function(){this.tweets=[{user:"@fdaciuk",text:"Pra quem quer aprender CSS decentemente, fica a dica do curso com o monstro Afonso Pacifer 😊",image:"fernando.jpeg",url:"https://twitter.com/fdaciuk"}]}});</script>
 </dom-module>
 <dom-module id="featured-list" assetpath="../../../../src/components/">
   <template>
@@ -355,11 +355,10 @@ delete this[t])},_configureProperties:function(e,t){for(var n in e){var r=e[n];i
         <h1 class="heading">O atalho na sua vida profissional</h1>
       </figure>
 
-      <p class="paragraph">
-        Diga adeus aos dias de "tentativa e erro", iremos desvendar todas as entrelinhas do CSS de forma direta e objetiva, garantindo que o conhecimento não irá se perder. Nosso objetivo não é formar desenvolvedores para "apenas" disputar vagas no mercado de trabalho, mas sim, ajuda-los a encontrar seu caminho para as estrelas.
-      </p>
-
-      <a class="btn" href="https://www.eventick.com.br/curso-de-organizacao-de-css-2" target="_blank">Inscreva-se</a>
+      <span class="btn-container">
+        <a class="btn" href="https://www.eventick.com.br/curso-de-organizacao-de-css" target="_blank">Inscreva-se</a>
+        <a class="btn" href="http://bit.ly/csshortcut-login" target="_blank">Login</a>
+      </span>
 
       <button class="slide-down-btn" id="slideDownBtn">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" class="arrow">
@@ -385,6 +384,10 @@ delete this[t])},_configureProperties:function(e,t){for(var n in e){var r=e[n];i
           <h2-shiny>Aprendendo a organizar o seu CSS</h2-shiny>
         </center>
 
+        <p class="paragraph">
+          Diga adeus aos dias de "tentativa e erro", iremos desvendar todas as entrelinhas do CSS de forma direta e objetiva, garantindo que o conhecimento não irá se perder. Nosso objetivo não é formar desenvolvedores para "apenas" disputar vagas no mercado de trabalho, mas sim, ajuda-los a encontrar seu caminho para as estrelas.
+        </p>
+
         <div class="presentation-video-container">
           <iframe class="presentation-video" src="https://www.youtube.com/embed/NnSkdtfudWs" frameborder="0" allowfullscreen=""></iframe>
         </div>
@@ -395,10 +398,10 @@ delete this[t])},_configureProperties:function(e,t){for(var n in e){var r=e[n];i
     <span class="shiny-line"></span>
 
     
-    
+    <hot-twitter></hot-twitter>
     
 
-    
+    <span class="shiny-line"></span>
 
     
     <section class="section-bg">
@@ -409,15 +412,7 @@ delete this[t])},_configureProperties:function(e,t){for(var n in e){var r=e[n];i
         </center>
 
         <p class="paragraph-2">
-          O curso tem como objetivo desmistificar todos os assuntos relacionados a organização do CSS, desde técnicas para definir a melhor nomenclatura para para suas classes até criar componentes totalmente funcionais e desacoplados. Abordaremos os principais conceitos relacionados a escalabilidade e mantenabilidade, passaremos por todas as principais metodologias mas não necessariamente iremos nos ater a elas, o objetivo será gerar um senso critico através de conhecimento e muita prática, que possibilite tomar a melhor decisão para cada caso.
-        </p>
-
-        <center>
-          <h2-shiny>Datas para anotar na agenda!</h2-shiny>
-        </center>
-
-        <p class="paragraph-2">
-          O curso estará em pré-venda até o dia <b>23 de novembro de 2016</b> e o lançamento será dia <b>01 de dezembro de 2016.</b>
+          O curso tem como objetivo desmistificar todos os assuntos relacionados a organização do CSS, desde técnicas para definir a melhor nomenclatura para para suas classes até criar componentes totalmente funcionais e desacoplados. Abordamos os principais conceitos relacionados a escalabilidade e mantenabilidade, passando por todas as principais metodologias mas não necessariamente iremos nos ater a elas. O objetivo é gerar através de conhecimento e muita prática um senso crítico que possibilite tomar a melhor deciscão para cada caso.
         </p>
 
         <center>
@@ -425,7 +420,51 @@ delete this[t])},_configureProperties:function(e,t){for(var n in e){var r=e[n];i
         </center>
 
         <p class="paragraph-2">
-          Tudo será 100% online e com aulas gravadas, não temos a quantidade exata de aulas e horas definidas, mas iremos cobrir toda a ementa com calma porém de forma direta, para isso teremos cada video com uma duração média entre 5min e 15min, para tornar o aprendizado o mais dinâmico possível. No final do curso você recebera um certificado comprovando todas as horas de estudo, apesar de nós dois sabermos que o importante será o conhecimento adquirido.
+          É 100% online, não temos a quatidade exata de aulas e horas definidas, mas iremos cobrir toda a ementa com calma porém de forma direta, para isso temos cada vídeo com uma duração média de 5 à 15 minutos, para tornar o aprendizado o mais dinâmico possível.
+No final do curso você irá receber um certificado comprovando todas as horas de estudo, apesar de nós dois sabermos que o importante será o conhecimento adquirido. ;)
+        </p>
+
+        <center>
+          <h2-shiny>Formas de pagamento</h2-shiny>
+        </center>
+
+        <p class="paragraph-2">
+          O pagamento é realizado pelo Eventick, por boleto ou cartão de crédito, parcelando em até 12x.
+          <br>
+          Uma dica: Existem cupons de desconto em eventos e nas comunidades. &lt;3
+        </p>
+
+        <center>
+          <h2-shiny>Grupo no Slack</h2-shiny>
+        </center>
+
+        <p class="paragraph-2">
+          Temos um grupo exclusivo para alunos, onde vocês podem tirar dúvidas e gerar discussões relacionadas aos assuntos do curso.
+        </p>
+
+      </div>
+    </section>
+
+    <span class="shiny-line"></span>
+
+    
+    <section class="section-bg">
+      <div class="section-container">
+
+        <center>
+          <h2-shiny>Amiguinhos</h2-shiny>
+        </center>
+
+        <p class="partners">
+          <a href="https://www.youtube.com/channel/UCKdo1RaF8gzfhvkOdZv_ojg" target="_blank">
+            <img src="/src/img/logo-webschool.png" alt="Webschool.io" class="partner">
+          </a>
+          <a href="https://www.facebook.com/codamosclub/" target="_blank">
+            <img src="/src/img/logo-codamos.png" alt="Codamos" class="codamos">
+          </a>
+          <a href="https://github.com/training-center" target="_blank">
+            <img src="/src/img/logo-centrodetreinamento.png" alt="Centro de Treinamento" class="partner">
+          </a>
         </p>
 
       </div>

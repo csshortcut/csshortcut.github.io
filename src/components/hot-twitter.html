@@ -2,7 +2,7 @@
 
 </head><body><dom-module id="hot-twitter">
   <template>
-    <style>*{box-sizing:border-box;}.twitter-container{width:100%;overflow:hidden;padding:50px 8px;background-image:url('../bg.jpg');}.tweet-container{display:flex;width:100%;max-width:700px;margin:0 auto;align-items:center;animation:switch 7s infinite;}@keyframes switch{0%{transform:translateX(-100vw);}8%{transform:translateX(20px);}12%{transform:translateX(0);}88%{transform:translateX(0);}92%{transform:translateX(-20px);}100%{transform:translateX(100vw);}}.twitter-text{margin-left:30px;font-weight:300;color:#fff;}.twitter-avatar{width:100px;border-radius:50%;overflow:hidden;}.twitter-user{width:100%;display:block;text-align:left;margin-top:10px;}a{text-decoration:none;color:#fff;transition:opacity .3s;}a:hover{animation:.6s mario infinite;}@keyframes mario{0%{color:#05fae9;}33%{color:#62acd6;}66%{color:#a574c8;}100%{color:#fa2cb7;}}</style>
+    <style>*{box-sizing:border-box;}.twitter-container{width:100%;overflow:hidden;padding:50px 8px;background-image:url('../bg.jpg');}.tweet-container{display:flex;width:100%;max-width:700px;margin:0 auto;align-items:center;animation:switch 10s infinite;}@keyframes switch{0%{transform:translateX(-100vw);}8%{transform:translateX(20px);}12%{transform:translateX(0);}88%{transform:translateX(0);}92%{transform:translateX(-20px);}100%{transform:translateX(100vw);}}.twitter-text{margin-left:30px;font-weight:300;color:#fff;}.twitter-avatar{width:100px;border-radius:50%;overflow:hidden;}.twitter-user{width:100%;display:block;text-align:left;margin-top:10px;}a{text-decoration:none;color:#fff;transition:opacity .3s;}a:hover{animation:.6s mario infinite;}@keyframes mario{0%{color:#05fae9;}33%{color:#62acd6;}66%{color:#a574c8;}100%{color:#fa2cb7;}}</style>
 <div class="twitter-container">
     <template is="dom-repeat" items="{{tweets}}">
 
@@ -21,6 +21,6 @@
 </div>
   </template>
 
-  <script>Polymer({is:"hot-twitter",ready:function(){this.tweets=[{user:"@_janasouza",text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum purus, pretium consectetur nisl et, posuere placerat justo. Sed rhoncus",image:"jana.jpg",url:"https://twitter.com/_janasouza"}]}});</script>
+  <script>Polymer({is:"hot-twitter",ready:function(){this.tweets=[{user:"@fdaciuk",text:"Pra quem quer aprender CSS decentemente, fica a dica do curso com o monstro Afonso Pacifer 😊",image:"fernando.jpeg",url:"https://twitter.com/fdaciuk"}]}});</script>
 </dom-module>
 </body></html>
