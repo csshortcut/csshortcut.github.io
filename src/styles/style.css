@@ -17,10 +17,18 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
+  .btn-container {
+    text-align: center;
+  }
+
 .btn {
   border: 1px solid #fff;
-  padding: 5px 30px;
+  padding: 10px 0;
+  width: 140px;
+  margin: 5px;
+  text-align: center;
   color: #fff;
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -70,7 +78,8 @@ figure {
 }
 
 .logo {
-  width: 250px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .heading {
@@ -171,6 +180,35 @@ font-family: 'Open Sans', sans-serif;;
 
 .ementa-container ul li ul li {
   font-weight: 300;
+}
+
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners a {
+  text-decoration: none;
+  opacity: .7;
+  transition: opacity .3s;
+}
+
+.partners a:hover {
+  opacity: 1;
+}
+
+.partner{
+  margin: 20px;
+  width: 100%;
+  max-width: 120px;
+}
+
+.codamos {
+  margin: 20px;
+  width: 100%;
+  max-width: 200px;
 }
 
 .section-bg {
