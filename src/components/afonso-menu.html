@@ -2,11 +2,154 @@
 
 </head><body><dom-module id="afonso-menu">
   <template>
-    <style>:root{--highlight-background:#029494;--highlight-color:#fff;}.bs-flex-center{display:flex;align-items:center;}.bs-decoration-off{text-decoration:none;transition:opacity .3s;}.bs-decoration-off:hover{opacity:.7;}.or-container{width:100%;max-width:1200px;margin:0 auto;padding:0 10px;position:relative;}.or-header{background-image:linear-gradient(
+    <style>
+
+      :root {
+        --highlight-background: #029494;
+        --highlight-color: #fff;
+      }
+
+      .bs-flex-center {
+        display: flex;
+        align-items: center;
+      }
+
+      .bs-decoration-off {
+        text-decoration: none;
+        transition: opacity .3s;
+      }
+
+      .bs-decoration-off:hover {
+        opacity: .7;
+      }
+
+      .or-container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+        position: relative;
+      }
+
+      .or-header {
+
+        background-image: linear-gradient(
           to right,
           #05fae9,
           #fa2cb7
-        );color:var(--highlight-color);}@media screen and (min-width: 888px){.ml-nav{flex:1;}}.ml-nav{}.ml-menu{padding-left:0px;margin:0px;text-align:right;}@media screen and (max-width: 888px){.ml-menu{position:absolute;background-color:#262626;text-align:left;z-index:2;}}.ml-iten-menu{list-style:none;}@media screen and (min-width: 888px){.ml-iten-menu{display:inline-block;}}@media screen and (max-width: 888px){.ml-logotipo{order:2;}.ml-nav{order:1;}}.at-heading-lv1{color:#fff;font-size:24px;display:block;font-weight:400;}.at-sub-heading{color:#fff;font-size:12px;font-weight:300;display:block;}@media screen and (min-width: 888px){.at-btn-open{display:none;}}.at-link-menu{color:#dedddd;text-decoration:none;font-weight:400;display:block;padding:10px;transition:color .2s;}.at-link-menu:hover{color:#fff;}@media screen and (max-width: 888px){.at-link-menu{background:#262626;}}.at-css-cast-show{padding:5px 10px;margin-left:10px;order:3;}@media screen and (max-width: 888px){.at-css-cast-show{order:3;}}.ml-logotipo{margin:0;padding:0;text-align:center;margin-right:20px;}@media screen and (max-width: 888px){.ml-logotipo{flex:1;}}</style>
+        );
+        color: var(--highlight-color);
+      }
+
+      /* menu
+      =========================================== */
+      @media screen and (min-width: 888px) {
+        .ml-nav {
+          flex: 1;
+        }
+      }
+
+      .ml-nav {
+      }
+
+      .ml-menu {
+        padding-left: 0px;
+        margin: 0px;
+        text-align: right;
+      }
+
+      @media screen and (max-width: 888px) {
+        .ml-menu {
+          position: absolute;
+          background-color: #262626;
+          text-align: left;
+          z-index: 2;
+        }
+      }
+
+      .ml-iten-menu {list-style: none;}
+
+      @media screen and (min-width: 888px) {
+        .ml-iten-menu {display: inline-block;}
+      }
+
+      @media screen and (max-width: 888px) {
+
+        .ml-logotipo {
+          order: 2;
+        }
+
+        .ml-nav {
+          order: 1;
+        }
+      }
+
+      /* text
+      =========================================== */
+      .at-heading-lv1 {
+        color: #fff;
+        font-size: 24px;
+        display: block;
+        font-weight: 400;
+      }
+
+      .at-sub-heading {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 300;
+        display: block;
+      }
+
+      /* menu
+      =========================================== */
+      @media screen and (min-width: 888px) {
+        .at-btn-open {display: none;}
+      }
+
+      .at-link-menu {
+        color: #dedddd;
+        text-decoration: none;
+        font-weight: 400;
+        display: block;
+        padding: 10px;
+        transition: color .2s;
+      }
+
+      .at-link-menu:hover {
+        color: #fff;
+      }
+
+      @media screen and (max-width: 888px) {
+        .at-link-menu {background: #262626;}
+      }
+
+      /* link to Cast Show
+      =========================================== */
+      .at-css-cast-show {
+        padding: 5px 10px;
+        margin-left: 10px;
+        order: 3;
+      }
+
+      @media screen and (max-width: 888px) {
+        .at-css-cast-show {
+          order: 3;
+        }
+      }
+
+      /* logotipo
+      =========================================== */
+    .ml-logotipo {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      margin-right: 20px;
+    }
+
+    @media screen and (max-width: 888px) {
+      .ml-logotipo {flex: 1;}
+    }
+    </style>
 
     <div class="or-header">
       <div class="or-container bs-flex-center">
