@@ -7,6 +7,9 @@ font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;;
 }
 
+:root {
+  --section: #000;
+}
 
 @font-face {
     font-family: 'harabara_maisharabaramaisdemo';
@@ -17,12 +20,18 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
-  .btn-container {
-    text-align: center;
-  }
+.btn-container {
+  text-align: center;
+}
 
 .btn {
-  border: 1px solid #fff;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-color: #fa2cb7;
+  border-left-color: #fa2cb7;
+  border-right-color: #05fae9;
+  border-top-color: #05fae9;
+  /*border-image: linear-gradient(to bottom, #05fae9, #fa2cb7) 1 100%;*/
   padding: 10px 0;
   width: 140px;
   margin: 5px;
@@ -50,10 +59,6 @@ font-family: 'Open Sans', sans-serif;
     #fa2cb7
   );
   width: 100%;
-}
-
-:root {
-  --section: #000;
 }
 
 .header {
@@ -119,6 +124,49 @@ figure {
   100% {fill: #fa2cb7;}
 }
 
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.course-container a {
+  text-decoration: none;
+  color: #fff;
+  width: calc(50% - 12px);
+  margin: 0 6px;
+}
+
+@media (max-width: 600px) {
+  .course-container a {
+    text-decoration: none;
+    color: #fff;
+    width: calc(100% - 12px);
+    margin: 6px;
+  }
+}
+
+.course-item {
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-color: #fa2cb7;
+  border-left-color: #fa2cb7;
+  border-right-color: #05fae9;
+  border-top-color: #05fae9;
+  padding: 20px;
+  font-size: 14px;
+  background-color: #111;
+}
+
+.course-item h3 {
+  color: #fff;
+  margin: 0 0 20px 0;
+}
+
+.course-item p {
+  color: #fff;
+  margin: 0;
+}
 
 .paragraph {
   color: #fff;
@@ -236,6 +284,18 @@ font-family: 'Open Sans', sans-serif;;
 
 .bg-white {
   background: #fff;
+}
+
+.heading-lv1 {
+        color: #fff;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        /*border-bottom: 4px solid #fa2cb7;*/
+        padding: 15px 35px;
+        font-size: 35px;
+        font-weight: 300;
+        font-family: 'harabara_maisharabaramaisdemo';
 }
 
 .heading-lv2 {
