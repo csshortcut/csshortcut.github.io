@@ -1,0 +1,146 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="featured-list">
+  <template>
+
+    <style>
+      .afonso {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        position: relative;
+        margin-top: 45px;
+      }
+
+      .afonso:before {
+        content: "";
+        display: inline-block;
+        width: 4px;
+        height: calc(100% - 20px);
+        margin-top: 10px;
+        background: #05fae9;
+        position: absolute;
+        top: 0;
+        left: 0:
+      }
+
+      .afonso-li {
+        background-size: 10% 10%;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-bottom: 20px;
+        font-weight: 700;
+        padding-left: 50px;
+      }
+
+      .afonso-li:after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 55px;
+        height: 4px;
+        top: 10px;
+        left: 0px;
+        background: #05fae9;
+      }
+
+
+      .afonso-li:before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background: #05fae9;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .afonso li ul li {
+        padding-left: 50px;
+        margin: 4px 0;
+      }
+
+      ul li ul {
+        padding: 0;
+      }
+
+      ul li ul li {
+        list-style: none;
+        font-weight: 400;
+      }
+    </style>
+
+        <ul class="afonso">
+        <li class="afonso-li">A importância da organização
+          <ul>
+          <li>Problemas relacionados</li>
+          <li>Entendendo que existe uma code UI</li>
+          <li>Desvendando os truques da developer UX</li>
+          </ul>
+        </li>
+        <li class="afonso-li">Como funciona a cascata
+          <ul>
+          <li>Entendendo o escopo</li>
+          <li>Entendendo a herança</li>
+          <li>Entendendo a especificidade</li>
+          </ul>
+        </li>
+        <li class="afonso-li">Code Style Guide
+          <ul>
+          <li>Como criar um padrão consistente de código para seus projetos</li>
+          </ul>
+        </li>
+        <li class="afonso-li">Semântica
+          <ul>
+          <li>Como nomear seus seletores de forma eficiente</li>
+          </ul>
+        </li>
+        <li class="afonso-li">Intro a pré-processesadores
+          <ul>
+          <li>Como usar a feature de module bundler</li>
+          </ul>
+        </li>
+        <li class="afonso-li">Apresentando as metodologias
+          <ul>
+          <li>SMACS</li>
+          <li>BEM</li>
+          <li>Atomic Design</li>
+          <li>ITCSS</li>
+          <li>RSCSS</li>
+          </ul>
+        </li>
+        <li class="afonso-li">React Style
+        <ul>
+          <li>Introdução a ReactJS</li>
+          <li>As melhores práticas para organizar seu estilo em componentes React.</li>
+          </ul>
+        </li>
+        </li>
+        <li class="afonso-li">Módulos totalmente isolados</i>
+          <ul>
+          <li>CSS modules</li>
+          <li>Web components</li>
+          </ul>
+        </li>
+        <li class="afonso-li">Documentação / Style guide
+          <ul>
+          <li>Gerando documentação partir dos comentários</li>
+          <li>Style guide para Atomic Design</li>
+          <li>Style guide para Web components com polymer relements</li>
+          <li>Style guide para componentes React</li>
+          <li>Style guide a partir de qualquer metodologia ou não</li>
+          </ul>
+        </li>
+        <li class="afonso-li">Visão do futuro com arquiteturas para HTTP2</li>
+        </ul>
+
+  </template>
+
+  <script>
+    Polymer({
+      is: 'featured-list'
+    });
+
+  </script>
+</dom-module>
